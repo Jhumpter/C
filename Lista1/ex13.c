@@ -2,7 +2,7 @@
 
 int main()
 {
-    int N, cem, cinquenta, vinte, dez, cinco, dois, um = 0;
+    int N, cem = 0, cinquenta = 0, vinte = 0, dez = 0, cinco = 0, dois = 0, um = 0;
     scanf("%d", &N);
     printf("%d\n", N);
     if (N >= 100)
