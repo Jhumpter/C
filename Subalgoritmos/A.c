@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-float coeficienteAngular(float x0, float y0, float x1, float y1){
+void coeficienteAngular(float x0, float y0, float x1, float y1){
     float coef = (y1 - y0)/(x1 - x0);
-    return coef;
+    printf("%.2f", coef);
 }
 
 int main (){

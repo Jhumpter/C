@@ -1,10 +1,20 @@
 #include <stdio.h>
-var x, y;
+float x, y;
 
-void LePonto(float x0, float y0, float x1, float y1){
-    if(x1 == x0){
-        printf("Nao eh possivel determinar o coeficiente angular.\n");
+void LePonto(){
+    scanf("%f %f", &x, &y);
+    float x0 = x;
+    float y0 = y;
+    scanf("%f %f", &x, &y);
+    if(x == x0){
+        printf("Nao eh possivel determinar o coeficiente angular\n");
     }else{
-        float coef = ()
+        float coef = (y - y0)/(x - x0);
+        printf("%.2f", coef);
     }
+}
+
+int main(){
+    LePonto();
+    return 0;
 }

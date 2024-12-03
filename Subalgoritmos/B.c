@@ -17,7 +17,7 @@ int main(){
     scanf("%d", &n);
     for(int i = 0; i < n; i++){
         scanf("%f %c", &altura, &sexo);
-        printf("Peso ideal: %f\n", pesoIdeal(altura, sexo));
+        printf("Peso ideal: %.2f\n", pesoIdeal(altura, sexo));
     }
     return 0;
 }
