@@ -12,9 +12,18 @@ int main(){
     strcat(nome,".txt");
     fd = fopen(nome, "w");
     for(int i=0;i<n;i++){
+        char aluno[30];
+        printf("Digite o nome do aluno: ");
+        getchar();
+        scanf("%[^\n]", aluno);
+        fprintf(fd,"%s",aluno);
+        int codigo;
+        printf("Digite o codigo do aluno: ");
+        scanf("%d",&codigo);
+        fprintf(fd,"(%d):",codigo);
         float notas[3];
         for(int j=0;j<3;j++){
-            printf("Digite a nota %d: ",j+1);
+            printf("Digite a nota %d de %s: ",j+1,aluno);
             scanf("%f",&notas[j]);
             fprintf(fd," %.1f",notas[j]);
         }
