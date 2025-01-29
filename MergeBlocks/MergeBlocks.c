@@ -107,6 +107,7 @@ void add_block(int column, int grid[][10], int blocks[], int columns_height[], i
                 grid[block_column][i+1] = 0;
             system("cls");
             print_grid(grid, blocks, current, next);
+            Sleep(150);
         }
         columns_height[block_column]++;
         (*current)++;
