@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1738189872 source:c:\users\gened\documents\github\c\mergeblocks\mergeblocks.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
